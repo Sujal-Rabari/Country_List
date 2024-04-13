@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>{{ data.Name }}</h2>
+<div mat-dialog-content>
+  <p>Code: {{ data.Code }}</p>
+  <p>Continent: {{ data.Continent }}</p>
+  <p>Surface Area: {{ data.SurfaceArea }}</p>
+  <p>Population: {{ data.Population }}</p>
+  <p>GNP: {{ data.GNP }}</p>
+  <img [src]="getMapImage(data.Code2)" alt="Map" class="map-image">
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="closeDialog()">Close</button>
+</div>
